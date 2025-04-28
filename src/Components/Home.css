@@ -1,0 +1,61 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    background-image: url('../../public/note-bg-image.jpg');
+    background-repeat:no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+}
+.my-notebook{
+    width: 70%;
+    margin: 0 auto;
+    padding: 1rem 0;
+}
+.container h1{
+    text-align: center;
+    color:rgb(255, 174, 0);
+    padding: 40px 0;
+}
+
+input,textarea{
+    display: block;
+    width: 100%;
+    padding:20px;
+    border-radius: 5px;
+    margin:5px;
+    outline: none;
+}
+.add-button{ 
+    display: block; 
+    margin: 0.5rem auto;
+    border-radius: 0.5rem;
+    padding:16px 32px;
+    border:none;
+    cursor: pointer;
+    background-color: rgb(69, 135, 66);
+    color:#fff;
+}
+
+.my-tasks{
+    width: 100%;
+    margin: 1rem auto;
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap:1rem;
+    background-color: rgba(0,0,0,0.2);
+}
+
+@media only screen and (max-width: 769px){
+    .my-notebook{
+        width: 100%;
+        padding: 0;
+    }
+    .my-tasks{
+        width: 100%;
+    }
+}
